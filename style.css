@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+html, body {
+    height: 200vh;
+}
+@font-face {
+    font-family: JetBrainsRegular;
+    src: url();
+}
+.css-load-main {
+    height: 100vh;
+    width: 100%;
+    position: inline-block;
+}
+.css-load-part1 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(63, 124, 194);
+    animation: css-load-animation 1.75s 0.375s forwards ease-in-out;
+    z-index: 1;
+}
+.css-load-part2 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(109, 211, 88);
+    animation: css-load-animation 1.75s 0.175s forwards ease-in-out;
+    z-index: 2;
+}
+.css-load-part3 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgb(233, 85, 85);
+    animation: css-load-animation 1.75s ease-in-out forwards;
+    z-index: 3;
+}
+.load-animate {
+    animation: css-load-animation2 1.2s 1.875s ease-in-out forwards;
+}
+.css-load-part4 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(231, 211, 97);
+    z-index: 0;
+}
+.css-load-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+}
+div.css-load-part4, i.css-load-part4 {
+    font-size: 3rem;
+}
+.css-load-circle-anim {
+    animation: css-load-rotate 1.25s ease-in-out infinite;
+}
+@keyframes css-load-animation {
+    100% {
+        transform: translateX(100vw);
+        display: none;
+    }
+}
+@keyframes css-load-animation2 {
+    100% {
+        transform: translateY(100vh);
+        display: none;
+    }
+}
+@keyframes css-load-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
