@@ -1,3 +1,9 @@
+:root {
+    --part-1-color: rgb(63, 124, 194);
+    --part-2-color: rgb(109, 211, 88);
+    --part-3-color: rgb(233, 85, 85);
+    --part-4-color: rgb(231, 211, 97);
+}
 body {
     margin: 0;
 }
@@ -13,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: rgb(63, 124, 194);
+    background-color: var(--part-1-color);
     animation: css-load-animation 1.75s 0.375s forwards ease-in-out;
     z-index: 1;
 }
@@ -21,7 +27,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: rgb(109, 211, 88);
+    background-color: var(--part-2-color);
     animation: css-load-animation 1.75s 0.175s forwards ease-in-out;
     z-index: 2;
 }
@@ -29,7 +35,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: rgb(233, 85, 85);
+    background: var(--part-3-color);
     animation: css-load-animation 1.75s ease-in-out forwards;
     z-index: 3;
 }
@@ -40,7 +46,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: rgb(231, 211, 97);
+    background-color: var(--part-4-color);
     z-index: 0;
 }
 .css-load-flexbox {
